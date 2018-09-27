@@ -1,0 +1,17 @@
+{
+  "name": "bazel-optional-dep-download",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-npm": "npm run clean && npm install --verbose --cache=npm-cache",
+    "test-yarn": "yarn clean && yarn --verbose --cache-folder=yarn-cache",
+    "clean": "rm -rf node_modules package-lock.json yarn.lock npm-cache yarn-cache"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bazel/bazel": "0.18.0-rc4"
+  }
+}
